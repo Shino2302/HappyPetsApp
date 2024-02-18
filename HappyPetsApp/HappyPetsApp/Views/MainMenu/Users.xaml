@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HappyPetsApp.Views.MainMenu.Users"
+             Title="User"
+             IconImageSource="usuario.png"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="usuario.png"
+                   HeightRequest="200" 
+                   WidthRequest="200"
+                   Margin="0,0,0,380"
+                   />
+            <Button Text="+" 
+                    CornerRadius="50" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Center"
+                    Margin="200,-50,0,0"
+                    Padding="15,25"
+                    FontSize="25"/>
+            <Label Text="Nombre de usuario" 
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold,Italic"
+                   Margin="0,410,0,0"
+                   FontSize="25"
+                   />
+            <Frame Margin="25,480,25,50">
+                <StackLayout>
+                    <Label Text="Información de usuario"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"
+                           />
+                    <Label Text="Correo:"
+                           TextColor="Black"/>
+                    <Label Text="BlaBla@gmail.com"
+                           TextColor="Black"/>
+                    <Label Text="Télefono:"
+                           TextColor="Black"/>
+                </StackLayout>
+            </Frame>
+            <Button Text="Editar Información"
+                    Margin="100,0,20,10"
+                    VerticalOptions="End"
+                    HorizontalOptions="End"
+                    TextTransform="None"
+                    CornerRadius="50"/>
+            <Button Text="Cerrar Sesión"
+                    Margin="20,0,100,10"
+                    VerticalOptions="End"
+                    HorizontalOptions="Start"
+                    CornerRadius="50"
+                    TextTransform="None"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
